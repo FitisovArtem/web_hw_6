@@ -4,6 +4,6 @@ join students as st on st.id = gd.students_id
 join groups as gr on gr.id = st.group_id
 join subjects as s on s.id = gd.subject_id
 
-where gr.group_name = 'voluptatum'
-and s.subject_name = 'nisi'
+where gr.id = 1
+and s.id = 2
 group by st.students_name
